@@ -1,4 +1,4 @@
-FROM mbaltrusitis/python:3.5
+FROM mbaltrusitis/centos-python:3.5
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
