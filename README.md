@@ -13,6 +13,8 @@ This Dockerfile is a port to [CentOS](http://www.centos.org/) from Debian's [doc
 
 - [`2.7.10`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/mbaltrusitis/dockerfile-centos-python/blob/master/2.7/Dockerfile)
 - [`2.7.10-onbuild`, `2.7-onbuild`, `2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/mbaltrusitis/dockerfile-centos-python/blob/master/2.7/onbuild/Dockerfile)
+- [`3.4.3`, `3.4` (*3.4/Dockerfile*)](https://github.com/mbaltrusitis/dockerfile-centos-python/blob/master/3.4/Dockerfile)
+- [`3.4.3-onbuild`, `3.4-onbuild`, `3.4.3-onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/mbaltrusitis/dockerfile-centos-python/blob/master/3.4/onbuild/Dockerfile)
 - [`3.5.0`, `3.5`, `3` (*3.5/Dockerfile*)](https://github.com/mbaltrusitis/dockerfile-centos-python/blob/master/3.5/Dockerfile)
 - [`3.5.0-onbuild`, `3.5-onbuild`, `3-onbuild` (*3.5/onbuild/Dockerfile*)](https://github.com/mbaltrusitis/dockerfile-centos-python/blob/master/3.5/onbuild/Dockerfile)
 
