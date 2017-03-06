@@ -20,10 +20,10 @@ RUN set -x \
     && gpg --verify python.tar.xz.asc \
     && tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
     && rm python.tar.xz* \
-    && cd /usr/src/python \    
-    && ./configure \
+    && cd /usr/src/python \
+    && ./configure --enable-shared \
     && make -j$(nproc) && make altinstall \
-    && ldconfig \
+    && echo "/usr/local/lib/" > /etc/ld.so.conf.d/local.conf && ldconfig \
     && pip3.5 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VERSION \
     && find /usr/local \
         \( -type d -a -name test -o -name tests \) \
@@ -40,3 +40,4 @@ RUN cd /usr/local/bin \
     && ln -s python-config3.5 python-config3
 
 CMD ["python3"]
+
